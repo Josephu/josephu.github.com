@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Josephu]]></title>
-  <link href="http://Josephu.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: personal | Josephu]]></title>
+  <link href="http://Josephu.github.com/blog/categories/personal/atom.xml" rel="self"/>
   <link href="http://Josephu.github.com/"/>
   <updated>2013-01-05T18:27:44+08:00</updated>
   <id>http://Josephu.github.com/</id>
