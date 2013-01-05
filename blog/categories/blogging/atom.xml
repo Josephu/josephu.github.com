@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blogging | Josephu]]></title>
   <link href="http://Josephu.github.com/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://Josephu.github.com/"/>
-  <updated>2013-01-06T00:04:44+08:00</updated>
+  <updated>2013-01-06T00:12:15+08:00</updated>
   <id>http://Josephu.github.com/</id>
   <author>
     <name><![CDATA[Josephu Batang Luz]]></name>
@@ -41,17 +41,15 @@
 <p>I setup a repository, Josephu (git@github.com:Josephu/Josephu.git to be exact),
 and run the command:</p>
 
-<blockquote><p><code>rake setup_github_pages</code></p>
+<p><code>rake setup_github_pages</code></p>
 
-<p><code>rake generate; rake deploy</code></p></blockquote>
+<p><code>rake generate; rake deploy</code></p>
 
-<p>But connecting to (http://josephu.github.com) failed!</p>
+<p>But connecting to <strong>http://josephu.github.com</strong> failed!</p>
 
 <p>It took me some time to figure out that I named the repo wrongly ...</p>
 
-<p>It is suppose to be</p>
-
-<blockquote><p>josephu.github.com (git@github.com:Josephu/josephu.github.com.git)</p></blockquote>
+<p>It is suppose to be <strong>josephu.github.com (git@github.com:Josephu/josephu.github.com.git)</strong></p>
 
 <p>Nice ...</p>
 
