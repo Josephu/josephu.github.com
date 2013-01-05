@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Let me see how this works - Josephu</title>
+  <title>Tips to setup & use octopress - Josephu</title>
   <meta name="author" content="Josephu Batang Luz">
 
   
-  <meta name="description" content="test this content
-">
+  <meta name="description" content="Octopress, really is &#8230; for hackers! Basically, in octopress, blogging is like programming To create post, do rake new_post[title] To generate &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Josephu.github.com/blog/2013/01/05/let-me-see-how-this-works/">
+  <link rel="canonical" href="http://Josephu.github.com/blog/2013/01/05/tips-to-setup-octopress/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">Let Me See How This Works</h1>
+      <h1 class="entry-title">Tips to Setup & Use Octopress</h1>
     
     
       <p class="meta">
@@ -84,14 +83,85 @@
   
 
 
-<time datetime="2013-01-05T14:45:00+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2013</time>
+<time datetime="2013-01-05T20:25:00+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>test this content</p>
+<div class="entry-content"><h2>Octopress, really is &#8230; for hackers!</h2>
+
+<p>Basically, in octopress, blogging is like programming</p>
+
+<blockquote><p>To create post, do <code>rake new_post[title]</code></p>
+
+<p>To generate result, do <code>rake generate</code></p>
+
+<p>To preview, do <code>rake preview</code></p>
+
+<p>To deploy, do <code>rake deploy</code></p></blockquote>
+
+<p>And &#8230; I blog with VIM!!</p>
+
+<h2>Setup Octopress</h2>
+
+<p>I tried to deploy Octopress by github, since I already have an account.</p>
+
+<p>However, the path wasn&#8217;t too smooth today &#8230;</p>
+
+<p>I setup a repository, Josephu (git@github.com:Josephu/Josephu.git to be exact),
+and run the command:</p>
+
+<blockquote><p><code>rake setup_github_pages</code></p>
+
+<p><code>rake generate; rake deploy</code></p></blockquote>
+
+<p>But connecting to (http://josephu.github.com) failed!</p>
+
+<p>It took me some time to figure out that I named the repo wrongly &#8230;</p>
+
+<p>It is suppose to be</p>
+
+<blockquote><p>josephu.github.com (git@github.com:Josephu/josephu.github.com.git)</p></blockquote>
+
+<p>Nice &#8230;</p>
+
+<h2>Customize Octopress</h2>
+
+<p>To make the theme feel right, I made a few fixes in CSS &amp; html.</p>
+
+<p>Basically, octopress provided scss files to customize in sass/custom and html content in source</p>
+
+<ul>
+<li>Background Color</li>
+</ul>
+
+
+<p>The color can be adjusted in sass/custom/color. They are defined as sass variables.</p>
+
+<p>Since I want to add some texture to the banner, I got some free texture from <a href="http://www.amazingtextures.com">amazingtextures</a>
+and add css in sass/custom/style, attach to the banner in source/layout. It looked much better this way.</p>
+
+<p>Note that the image should be placed in source/images, and in scss, use image-url to get the correct path.</p>
+
+<ul>
+<li>Font Size</li>
+</ul>
+
+
+<p>The blockquote font is simply too large, so overriding with css is more comfortable for the eye.</p>
+
+<ul>
+<li>Optimize Speed</li>
+</ul>
+
+
+<p>Texture is compressed and croped to reduce transfer size</p>
+
+<h2>So This Is Just The Beginning</h2>
+
+<p>Have fun blogging!</p>
 </div>
 
 
@@ -114,12 +184,12 @@
   
 
 
-<time datetime="2013-01-05T14:45:00+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2013</time>
+<time datetime="2013-01-05T20:25:00+08:00" pubdate data-updated="true">Jan 5<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/personal/'>personal</a>
+    <a class='category' href='/blog/categories/blogging/'>blogging</a>
   
 </span>
 
@@ -128,7 +198,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Josephu.github.com/blog/2013/01/05/let-me-see-how-this-works/" data-via="" data-counturl="http://Josephu.github.com/blog/2013/01/05/let-me-see-how-this-works/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Josephu.github.com/blog/2013/01/05/tips-to-setup-octopress/" data-via="" data-counturl="http://Josephu.github.com/blog/2013/01/05/tips-to-setup-octopress/" >Tweet</a>
   
   
   
@@ -151,7 +221,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/01/05/let-me-see-how-this-works/">Let me see how this works</a>
+        <a href="/blog/2013/01/05/tips-to-setup-octopress/">Tips to setup & use octopress</a>
       </li>
     
   </ul>

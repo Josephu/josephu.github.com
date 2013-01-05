@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Josephu]]></title>
-  <link href="http://Josephu.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: blogging | Josephu]]></title>
+  <link href="http://Josephu.github.com/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://Josephu.github.com/"/>
   <updated>2013-01-06T00:04:44+08:00</updated>
   <id>http://Josephu.github.com/</id>
@@ -18,7 +18,7 @@
     <link href="http://Josephu.github.com/blog/2013/01/05/tips-to-setup-octopress/"/>
     <updated>2013-01-05T20:25:00+08:00</updated>
     <id>http://Josephu.github.com/blog/2013/01/05/tips-to-setup-octopress</id>
-    <content type="html"><![CDATA[<h2>Octopress, really is &#8230; for hackers!</h2>
+    <content type="html"><![CDATA[<h2>Octopress, really is ... for hackers!</h2>
 
 <p>Basically, in octopress, blogging is like programming</p>
 
@@ -30,13 +30,13 @@
 
 <p>To deploy, do <code>rake deploy</code></p></blockquote>
 
-<p>And &#8230; I blog with VIM!!</p>
+<p>And ... I blog with VIM!!</p>
 
 <h2>Setup Octopress</h2>
 
 <p>I tried to deploy Octopress by github, since I already have an account.</p>
 
-<p>However, the path wasn&#8217;t too smooth today &#8230;</p>
+<p>However, the path wasn't too smooth today ...</p>
 
 <p>I setup a repository, Josephu (git@github.com:Josephu/Josephu.git to be exact),
 and run the command:</p>
@@ -47,13 +47,13 @@ and run the command:</p>
 
 <p>But connecting to (http://josephu.github.com) failed!</p>
 
-<p>It took me some time to figure out that I named the repo wrongly &#8230;</p>
+<p>It took me some time to figure out that I named the repo wrongly ...</p>
 
 <p>It is suppose to be</p>
 
 <blockquote><p>josephu.github.com (git@github.com:Josephu/josephu.github.com.git)</p></blockquote>
 
-<p>Nice &#8230;</p>
+<p>Nice ...</p>
 
 <h2>Customize Octopress</h2>
 
