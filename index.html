@@ -9,7 +9,7 @@
   <meta name="author" content="Josephu Batang Luz">
 
   
-  <meta name="description" content="Octopress, really is &#8230; for hackers! Basically, in octopress, blogging is like programming To create post, do rake new_post[title] To generate &hellip;">
+  <meta name="description" content="Mongolia is beautiful. It has a lot of amazing scenery, and you can experience tough and rural life. Mongolia has a rich amount of natural resource, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,164 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/06/i-love-mongolia/">I Love Mongolia</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-06T22:28:00+08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Mongolia is beautiful. It has a lot of amazing scenery, and you can experience tough and rural life.</p>
+
+<p><img src="/images/mongolia002.jpg" width="520" height="390" title="shepherd" alt="rural places with shepherds"></p>
+
+<p>Mongolia has a rich amount of natural resource, and the largest industry are mining and sightseeing. Since Mongolia is not advance in technology, many countries came to &#8220;help&#8221;, and one of the most largest country is China. They brought hugh money in, but also much society problem. It&#8217;s ironic.</p>
+
+<p>Looking back, the people I met are mostly friendly (as long as they know I am not from China&#8230;) and I really enjoyed being with them.</p>
+
+<p><img src="/images/mongolia009.jpg" width="520" height="390" title="desert" alt="200km desert"></p>
+
+<p>This is a very famous desert as it cross 200km. Although only around 200m high, it was very difficult to climb up, almost fell dead reaching the top. The happy man in the photo is our driver. :P</p>
+
+<p><img src="/images/mongolia012f.jpg" width="440" height="600" title="glacier" alt="glacier in summer"></p>
+
+<p>It is June, 30~40 degress celcius, and the glacier is still so thick. It is legendary &#8230;</p>
+
+<p><img src="/images/mongolia007.jpg" width="520" height="390" title="ancient drawing" alt="ancient drawing"></p>
+
+<p>This place looks like it has been hit by comet. The rocks are strange, and many ancient drawings are preserved.</p>
+
+<p>Hope you enjoyed these photos as much as I did!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/06/test-share-code/">Automate Purchases With Paypal</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-06T10:47:00+08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>To run purchases automatically without needing customer&#8217;s continuous authorization,
+baid (billing agreement id) is needed.</p>
+
+<figure class='code'><figcaption><span>active merchant example to get paypal baid by paypal express checkout api</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># Initialize Paypal API</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">initialize</span>
+</span><span class='line'>  <span class="vi">@paypal</span> <span class="o">||=</span> <span class="ss">activemerchant</span><span class="p">:</span><span class="ss">:billing</span><span class="o">::</span><span class="n">paypalexpressgateway</span><span class="o">.</span><span class="n">new</span><span class="p">(</span>
+</span><span class='line'>      <span class="ss">:login</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="n">paypal</span> <span class="n">email</span> <span class="n">account</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span class='line'>      <span class="ss">:password</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="n">paypal</span> <span class="n">password</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span class='line'>      <span class="ss">:signature</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="n">paypal</span> <span class="n">signature</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Ask for user agreement</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">create</span>
+</span><span class='line'>  <span class="n">setup_response</span> <span class="o">=</span> <span class="vi">@paypal</span><span class="o">.</span><span class="n">setup_purchase</span><span class="p">(</span>
+</span><span class='line'>  <span class="mi">0</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:return_url</span>        <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">server</span> <span class="n">path</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:cancel_return_url</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="n">your</span> <span class="n">server</span> <span class="n">path</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:description</span> <span class="o">=&gt;</span> <span class="o">&lt;</span><span class="n">product</span> <span class="n">description</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:currency</span> <span class="o">=&gt;</span> <span class="s2">&quot;USD&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:custom</span> <span class="o">=&gt;</span> <span class="s2">&quot;a customized data&quot;</span><span class="p">,</span>
+</span><span class='line'>  <span class="ss">:billing_agreement</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span><span class='line'>      <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="s1">&#39;MerchantInitiatedBilling&#39;</span><span class="p">,</span> <span class="c1"># Use this to retrieve BAID =&gt; Billing Agreement ID</span>
+</span><span class='line'>      <span class="ss">:payment_type</span> <span class="o">=&gt;</span> <span class="s2">&quot;Any&quot;</span> <span class="c1"># seemed optional</span>
+</span><span class='line'>  <span class="p">})</span>
+</span><span class='line'>  <span class="n">redirect_to</span> <span class="vi">@paypal</span><span class="o">.</span><span class="n">redirect_url_for</span><span class="p">(</span><span class="n">setup_response</span><span class="o">.</span><span class="n">token</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Get BAID</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">callback</span>
+</span><span class='line'>  <span class="n">response</span> <span class="o">=</span> <span class="vi">@paypal</span><span class="o">.</span><span class="n">create_agreement</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:token</span><span class="o">]</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">success?</span>
+</span><span class='line'>      <span class="n">baid</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">params</span><span class="o">[</span><span class="s2">&quot;BillingAgreementID&quot;</span><span class="o">]</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -181,6 +339,14 @@ and add css in sass/custom/style, attach to the banner in source/layout. It look
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/06/i-love-mongolia/">I love Mongolia</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/06/test-share-code/">Automate purchases with paypal</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/01/05/tips-to-setup-octopress/">Tips to setup & use octopress</a>
