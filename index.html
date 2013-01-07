@@ -150,7 +150,10 @@
 
 
   <div class="entry-content"><p>To run purchases automatically without needing customer&#8217;s continuous authorization,
-baid (billing agreement id) is needed.</p>
+You need to get baid (billing agreement id). Afterwards you can use Paypal
+reference transaction API to do future purchases.</p>
+
+<p>Below is an example using active merchant gem to run Paypal API</p>
 
 <figure class='code'><figcaption><span>active merchant example to get paypal baid by paypal express checkout api</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
