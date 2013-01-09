@@ -9,7 +9,8 @@
   <meta name="author" content="Josephu Batang Luz">
 
   
-  <meta name="description" content="Mongolia is beautiful. It has a lot of amazing scenery, and you can experience tough and rural life. Mongolia has a rich amount of natural resource, &hellip;">
+  <meta name="description" content="I was trying out this [tutorial] (http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/),
+which worked well. The only change I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +65,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/09/trying-out-red-mine/">Trying Out Red Mine</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-09T23:47:00+08:00" pubdate data-updated="true">Jan 9<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was trying out this [tutorial] (http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/),
+which worked well. The only change I made was using mysql instead of mysql2 in database.yml setting, and using 2.2-stable branch.</p>
+
+<p>I also placed a few themes in <code>public/themes</code>, which you can switch in <code>Administrator/settings/display</code>.</p>
+
+<p>Deploying with Heroku the first time was interesting. All you need to do is installing the Heroku toolbelt,
+then, you can use <code>heroku login</code> to switch to heroku env., and <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup
+key for ssh session when doing git push.</p>
+
+<p>Note that since Heroku does not use sqlite3 anymore, so sqlite3 related gems need to be removed in Gemfile.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -342,6 +388,10 @@ and add css in sass/custom/style, attach to the banner in source/layout. It look
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/09/trying-out-red-mine/">Trying out Red Mine</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/01/06/i-love-mongolia/">I love Mongolia</a>

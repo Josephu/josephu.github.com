@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>I love Mongolia - Josephu</title>
+  <title>Trying out Red Mine - Josephu</title>
   <meta name="author" content="Josephu Batang Luz">
 
   
-  <meta name="description" content="Mongolia is beautiful. It has a lot of amazing scenery, and you can experience tough and rural life. Mongolia has a rich amount of natural resource, &hellip;">
+  <meta name="description" content="I was trying out this [tutorial] (http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/),
+which worked well. The only change I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Josephu.github.com/blog/2013/01/06/i-love-mongolia/">
+  <link rel="canonical" href="http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">I Love Mongolia</h1>
+      <h1 class="entry-title">Trying Out Red Mine</h1>
     
     
       <p class="meta">
@@ -83,34 +84,23 @@
   
 
 
-<time datetime="2013-01-06T22:28:00+08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2013</time>
+<time datetime="2013-01-09T23:47:00+08:00" pubdate data-updated="true">Jan 9<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Mongolia is beautiful. It has a lot of amazing scenery, and you can experience tough and rural life.</p>
+<div class="entry-content"><p>I was trying out this [tutorial] (http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/),
+which worked well. The only change I made was using mysql instead of mysql2 in database.yml setting, and using 2.2-stable branch.</p>
 
-<p><img src="/images/mongolia002.jpg" width="520" height="390" title="shepherd" alt="rural places with shepherds"></p>
+<p>I also placed a few themes in <code>public/themes</code>, which you can switch in <code>Administrator/settings/display</code>.</p>
 
-<p>Mongolia has a rich amount of natural resource, and the largest industry are mining and sightseeing. Since Mongolia is not advance in technology, many countries came to &#8220;help&#8221;, and one of the most largest country is China. They brought hugh money in, but also much society problem. It&#8217;s ironic.</p>
+<p>Deploying with Heroku the first time was interesting. All you need to do is installing the Heroku toolbelt,
+then, you can use <code>heroku login</code> to switch to heroku env., and <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup
+key for ssh session when doing git push.</p>
 
-<p>Looking back, the people I met are mostly friendly (as long as they know I am not from China&#8230;) and I really enjoyed being with them.</p>
-
-<p><img src="/images/mongolia009.jpg" width="520" height="390" title="desert" alt="200km desert"></p>
-
-<p>This is a very famous desert as it cross 200km. Although only around 200m high, it was very difficult to climb up, almost fell dead reaching the top. The happy man in the photo is our driver. :P</p>
-
-<p><img src="/images/mongolia012f.jpg" width="440" height="600" title="glacier" alt="glacier in summer"></p>
-
-<p>It is June, 30~40 degress celcius, and the glacier is still so thick. It is legendary &#8230;</p>
-
-<p><img src="/images/mongolia007.jpg" width="520" height="390" title="ancient drawing" alt="ancient drawing"></p>
-
-<p>This place looks like it has been hit by comet. The rocks are strange, and many ancient drawings are preserved.</p>
-
-<p>Hope you enjoyed these photos as much as I did!</p>
+<p>Note that since Heroku does not use sqlite3 anymore, so sqlite3 related gems need to be removed in Gemfile.</p>
 </div>
 
 
@@ -133,7 +123,7 @@
   
 
 
-<time datetime="2013-01-06T22:28:00+08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2013</time>
+<time datetime="2013-01-09T23:47:00+08:00" pubdate data-updated="true">Jan 9<span>th</span>, 2013</time>
       
 
 
@@ -141,7 +131,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Josephu.github.com/blog/2013/01/06/i-love-mongolia/" data-via="" data-counturl="http://Josephu.github.com/blog/2013/01/06/i-love-mongolia/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine/" data-via="" data-counturl="http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine/" >Tweet</a>
   
   
   
@@ -150,10 +140,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/06/test-share-code/" title="Previous Post: Automate purchases with paypal">&laquo; Automate purchases with paypal</a>
+        <a class="basic-alignment left" href="/blog/2013/01/06/i-love-mongolia/" title="Previous Post: I love Mongolia">&laquo; I love Mongolia</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/09/trying-out-red-mine/" title="Next Post: Trying out Red Mine">Trying out Red Mine &raquo;</a>
       
     </p>
   </footer>
