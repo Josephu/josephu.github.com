@@ -9,8 +9,9 @@
   <meta name="author" content="Josephu Batang Luz">
 
   
-  <meta name="description" content="I was trying out this [tutorial] (http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/),
-which worked well. The only change I &hellip;">
+  <meta name="description" content="My customization I was trying out this tutorial,
+with only a minor customization. Use mysql2 instead of mysql in database.yml
+Use 2.2-stable branch &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,16 +92,24 @@ which worked well. The only change I &hellip;">
   </header>
 
 
-<div class="entry-content"><p>I was trying out this [tutorial] (http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/),
-which worked well. The only change I made was using mysql instead of mysql2 in database.yml setting, and using 2.2-stable branch.</p>
+<div class="entry-content"><h2>My customization</h2>
 
-<p>I also placed a few themes in <code>public/themes</code>, which you can switch in <code>Administrator/settings/display</code>.</p>
+<p>I was trying out this <a href="http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/">tutorial</a>,
+with only a minor customization.</p>
 
-<p>Deploying with Heroku the first time was interesting. All you need to do is installing the Heroku toolbelt,
-then, you can use <code>heroku login</code> to switch to heroku env., and <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup
+<ol>
+<li>Use <strong>mysql2</strong> instead of <strong>mysql</strong> in database.yml</li>
+<li>Use 2.2-stable branch in Red Mine</li>
+<li>Remove sqlite3 related gems in Gemfile</li>
+<li>Add themes in <code>public/themes</code>, and switch theme in <code>Administrator/settings/display</code></li>
+</ol>
+
+
+<h2>Deploying with Heroku</h2>
+
+<p>Deploying with Heroku is easy. All you do is installing the Heroku toolbelt,
+use <code>heroku login</code> to switch to heroku env., and <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup
 key for ssh session when doing git push. Then follow the guide and try out <code>http://your_app.herokuapp.com/</code>.</p>
-
-<p>Note that since Heroku does not use sqlite3 anymore, so sqlite3 related gems need to be removed in Gemfile.</p>
 </div>
 
 
