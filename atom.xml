@@ -4,7 +4,7 @@
   <title><![CDATA[Josephu]]></title>
   <link href="http://Josephu.github.com/atom.xml" rel="self"/>
   <link href="http://Josephu.github.com/"/>
-  <updated>2013-01-10T00:12:12+08:00</updated>
+  <updated>2013-01-10T00:15:04+08:00</updated>
   <id>http://Josephu.github.com/</id>
   <author>
     <name><![CDATA[Josephu Batang Luz]]></name>
@@ -25,7 +25,7 @@ which worked well. The only change I made was using mysql instead of mysql2 in d
 
 <p>Deploying with Heroku the first time was interesting. All you need to do is installing the Heroku toolbelt,
 then, you can use <code>heroku login</code> to switch to heroku env., and <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup
-key for ssh session when doing git push.</p>
+key for ssh session when doing git push. Then follow the guide and try out <code>http://your_app.herokuapp.com/</code>.</p>
 
 <p>Note that since Heroku does not use sqlite3 anymore, so sqlite3 related gems need to be removed in Gemfile.</p>
 ]]></content>
