@@ -11,7 +11,7 @@
   
   <meta name="description" content="My customization I was trying out this tutorial,
 with only a minor customization. Use mysql2 instead of mysql in database.yml
-Use 2.2-stable branch &hellip;">
+Use master branch in &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -99,7 +99,7 @@ with only a minor customization.</p>
 
 <ol>
 <li>Use <strong>mysql2</strong> instead of <strong>mysql</strong> in database.yml</li>
-<li>Use 2.2-stable branch in Red Mine</li>
+<li>Use master branch in Red Mine</li>
 <li>Remove sqlite3 related gems in Gemfile</li>
 <li>Add themes in <code>public/themes</code>, and switch theme in <code>Administrator/settings/display</code></li>
 </ol>
@@ -107,9 +107,20 @@ with only a minor customization.</p>
 
 <h2>Deploying with Heroku</h2>
 
-<p>Deploying with Heroku is easy. All you do is installing the Heroku toolbelt,
-use <code>heroku login</code> to switch to heroku env., and <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup
-key for ssh session when doing git push. Then follow the guide and try out <code>http://your_app.herokuapp.com/</code>.</p>
+<p>I added a few steps from above tutorial, since this is my first deploy to Heroku.</p>
+
+<ol>
+<li>Installing the Heroku toolbelt</li>
+<li>Use <code>heroku login</code> to switch to heroku env.</li>
+<li>Use <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup key for ssh session when doing git push</li>
+<li>Restart heroku by <code>heroku ps:restart</code> and use <code>heroku open</code> to try out your app</li>
+<li>Edit config/environment.rb to comment out the exit in case of plugins in vendor: <code># exit 1</code></li>
+</ol>
+
+
+<p>Note:
+* This other <a href="http://x-aeon.com/wp/2012/09/27/howto-install-redmine-on-heroku/">reference</a> shows clearly the fix of vendor plugin issue. Thanks.
+* This other <a href="http://railsapps.github.com/rails-heroku-tutorial.html">reference</a> is very informative, but slightly out of date.</p>
 </div>
 
 
