@@ -4,7 +4,7 @@
   <title><![CDATA[Josephu]]></title>
   <link href="http://Josephu.github.com/atom.xml" rel="self"/>
   <link href="http://Josephu.github.com/"/>
-  <updated>2013-01-10T09:14:39+08:00</updated>
+  <updated>2013-01-10T09:15:38+08:00</updated>
   <id>http://Josephu.github.com/</id>
   <author>
     <name><![CDATA[Josephu Batang Luz]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Trying out Red Mine]]></title>
+    <title type="html"><![CDATA[Setup Red Mine On Heroku]]></title>
     <link href="http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine/"/>
     <updated>2013-01-09T23:47:00+08:00</updated>
     <id>http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine</id>
