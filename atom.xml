@@ -4,7 +4,7 @@
   <title><![CDATA[Josephu]]></title>
   <link href="http://Josephu.github.com/atom.xml" rel="self"/>
   <link href="http://Josephu.github.com/"/>
-  <updated>2013-01-10T09:15:38+08:00</updated>
+  <updated>2013-01-10T09:19:48+08:00</updated>
   <id>http://Josephu.github.com/</id>
   <author>
     <name><![CDATA[Josephu Batang Luz]]></name>
@@ -20,13 +20,13 @@
     <id>http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine</id>
     <content type="html"><![CDATA[<h2>My customization</h2>
 
-<p>I was trying out this <a href="http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/">tutorial</a>,
+<p>I followed this <a href="http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/">tutorial</a>,
 with only a minor customization.</p>
 
 <ol>
 <li>Use <strong>mysql2</strong> instead of <strong>mysql</strong> in database.yml</li>
-<li>Use master branch in Red Mine</li>
-<li>Remove sqlite3 related gems in Gemfile</li>
+<li>Use <strong>master</strong> branch in Red Mine</li>
+<li>Remove <strong>sqlite3</strong> related gems in Gemfile</li>
 <li>Add themes in <code>public/themes</code>, and switch theme in <code>Administrator/settings/display</code></li>
 </ol>
 
@@ -40,13 +40,17 @@ with only a minor customization.</p>
 <li>Use <code>heroku login</code> to switch to heroku env.</li>
 <li>Use <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup key for ssh session when doing git push</li>
 <li>Restart heroku by <code>heroku ps:restart</code> and use <code>heroku open</code> to try out your app</li>
-<li>Edit config/environment.rb to comment out the exit in case of plugins in vendor: <code># exit 1</code></li>
+<li>Edit <em>config/environment.rb</em> to comment out the exit in case of plugins in vendor: <code># exit 1</code></li>
 </ol>
 
 
-<p>Note:
-* This other <a href="http://x-aeon.com/wp/2012/09/27/howto-install-redmine-on-heroku/">reference</a> shows clearly the fix of vendor plugin issue. Thanks.
-* This other <a href="http://railsapps.github.com/rails-heroku-tutorial.html">reference</a> is very informative, but slightly out of date.</p>
+<p>Note:</p>
+
+<ul>
+<li><p>This other <a href="http://x-aeon.com/wp/2012/09/27/howto-install-redmine-on-heroku/">reference</a> shows clearly the fix of vendor plugin issue. Thanks.</p></li>
+<li><p>This other <a href="http://railsapps.github.com/rails-heroku-tutorial.html">reference</a> is very informative, but slightly out of date.</p></li>
+</ul>
+
 ]]></content>
   </entry>
   
