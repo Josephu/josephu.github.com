@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Setup Red Mine On Heroku - Josephu</title>
+  <title>Category: software development - Josephu</title>
   <meta name="author" content="Josephu Batang Luz">
 
   
-  <meta name="description" content="My customization I followed this tutorial,
-with only a minor customization. Use mysql2 instead of mysql in database.yml
-Use master branch in Red Mine &hellip;">
+  <meta name="description" content="Category: software development">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Use master branch in Red Mine &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine/">
+  <link rel="canonical" href="http://Josephu.github.comblog/categories/software-development/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,112 +63,35 @@ Use master branch in Red Mine &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Setup Red Mine on Heroku</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-09T23:47:00+08:00" pubdate data-updated="true">Jan 9<span>th</span>, 2013</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Software Development</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><h2>My customization</h2>
 
-<p>I followed this <a href="http://carolhsu.github.com/blog/2012/11/05/how-to-deploy-redmine-at-heroku/">tutorial</a>,
-with only a minor customization.</p>
+  
+  <h2>2013</h2>
 
-<ol>
-<li>Use <strong>mysql2</strong> instead of <strong>mysql</strong> in database.yml</li>
-<li>Use <strong>master</strong> branch in Red Mine</li>
-<li>Remove <strong>sqlite3</strong> related gems in Gemfile</li>
-<li>Add themes in <code>public/themes</code>, and switch theme in <code>Administrator/settings/display</code></li>
-</ol>
+<article>
+  
+<h1><a href="/blog/2013/02/01/wonderful-editor-sublime-text-2/">Wonderful editor Sublime Text 2</a></h1>
+<time datetime="2013-02-01T21:53:00+08:00" pubdate><span class='month'>Feb</span> <span class='day'>01</span> <span class='year'>2013</span></time>
 
-
-<h2>Deploying with Heroku</h2>
-
-<p>I added a few steps from above tutorial, since this is my first deploy to Heroku.</p>
-
-<ol>
-<li>Installing the Heroku toolbelt</li>
-<li>Use <code>heroku login</code> to switch to heroku env.</li>
-<li>Use <code>heroku keys:add ~/.ssh/id_rsa_x.pub</code> to setup key for ssh session when doing git push</li>
-<li>Restart heroku by <code>heroku ps:restart</code> and use <code>heroku open</code> to try out your app</li>
-<li>Edit <em>config/environment.rb</em> to comment out the exit in case of plugins in vendor: <code># exit 1</code></li>
-</ol>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/programming/'>programming</a>, <a class='category' href='/blog/categories/software-development/'>software development</a></span>
+</footer>
 
 
-<p>Note:</p>
-
-<ul>
-<li><p>This other <a href="http://x-aeon.com/wp/2012/09/27/howto-install-redmine-on-heroku/">reference</a> shows clearly the fix of vendor plugin issue. Thanks.</p></li>
-<li><p>This other <a href="http://railsapps.github.com/rails-heroku-tutorial.html">reference</a> is very informative, but slightly out of date.</p></li>
-</ul>
+</article>
 
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Josephu Batang Luz</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-01-09T23:47:00+08:00" pubdate data-updated="true">Jan 9<span>th</span>, 2013</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine/" data-via="" data-counturl="http://Josephu.github.com/blog/2013/01/09/trying-out-red-mine/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2013/01/06/i-love-mongolia/" title="Previous Post: I love Mongolia">&laquo; I love Mongolia</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/01/12/how-to-use-nested-resources/" title="Next Post: How to use nested resources">How to use nested resources &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>

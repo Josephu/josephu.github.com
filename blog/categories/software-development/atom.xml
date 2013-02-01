@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software development | Josephu]]></title>
+  <link href="http://Josephu.github.com/blog/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://Josephu.github.com/"/>
+  <updated>2013-02-02T00:57:46+08:00</updated>
+  <id>http://Josephu.github.com/</id>
+  <author>
+    <name><![CDATA[Josephu Batang Luz]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Wonderful editor Sublime Text 2]]></title>
+    <link href="http://Josephu.github.com/blog/2013/02/01/wonderful-editor-sublime-text-2/"/>
+    <updated>2013-02-01T21:53:00+08:00</updated>
+    <id>http://Josephu.github.com/blog/2013/02/01/wonderful-editor-sublime-text-2</id>
+    <content type="html"><![CDATA[<h3>Better than TextMate</h3>
+
+<ul>
+<li>Cross platform, Mac/Linux/Windows all works!</li>
+<li>Well designed UI and highly customizable!</li>
+<li>Support Chinese characters!</li>
+<li>Rich and convenient package system, easy to hack</li>
+<li>Support VIM commands</li>
+<li>Great support to GIT</li>
+<li>Other great packages, eg. SFTP ...</li>
+</ul>
+
+
+<h3>Useful packages</h3>
+
+<p>You need to install package control before using these packages.</p>
+
+<ul>
+<li>Vintage and VintageEx: integrate with VIM</li>
+<li><a href="https://github.com/kemayo/sublime-text-2-git/wiki">Git</a>: provide git commands</li>
+<li><a href="https://github.com/jisaacks/GitGutter">Gitgutter</a>: show diff by +/- on the head of the line</li>
+<li><a href="http://wbond.net/sublime_packages/sftp">SFTP</a>: provide sftp to sync remote file/folder</li>
+<li><a href="https://github.com/luqman/SublimeText2RailsRelatedFiles">Rails Related Files</a>: Can find related controller/model/views</li>
+<li><a href="https://github.com/KELiON/RailsMigrationsList">Rails Migration List</a>: Can find all migration files</li>
+<li><a href="http://code.google.com/p/zen-coding/">Zen Coding</a>: provide quick html generation, see <a href="http://fredchiu.wordpress.com/2011/12/14/install-zen-coding-plugin-for-sublime-text-2/">tutorial</a></li>
+</ul>
+
+
+<h3>Convenient shortcuts</h3>
+
+<p>Below are some interesting keys in Mac:</p>
+
+<ul>
+<li><strong> Cmd Shift p </strong>: open command window</li>
+<li><strong> Cmd t </strong>: file finder, support fuzzy query!</li>
+<li><strong> Cmd Shift [ or ] </strong>: jump to left or right file</li>
+<li><strong> Cmd w </strong>: close file</li>
+<li><strong> Cmd r (Cmd t + @) </strong>: find id in html file</li>
+<li><strong> Cmd t + # </strong>: find class or html tags in html file</li>
+<li><strong> Cmd l </strong>: select line/s</li>
+<li><strong> Cmd (number) </strong>: jump to file (number)</li>
+<li><strong> Cmd t + :(number)</strong>: jump to line (number)</li>
+<li><strong> Cmd k b </strong>: toggle sidebar</li>
+<li><strong> Cmd Opt 2 </strong>: split to 2 screens</li>
+<li><strong> Ctrl Shift (number) </strong>: move file to screen (number)</li>
+</ul>
+
+
+<h3>Setup package control</h3>
+
+<p>It is very simple to setup <a href="http://wbond.net/sublime_packages/package_control/installation">package control</a>.
+To check if you successful install, go to <strong> Preference -> Browse Packages </strong>, go up a folder, and check in <strong> Installed Packages </strong>.</p>
+
+<p>After installed, you should find <strong> Package Control ... </strong> in command window.
+Eg. <strong> Package Control - Install </strong> will connect to remote repo. and show all packages</p>
+
+<h3>Setup VIM commands</h3>
+
+<p>Vintage provides simulated vim commands in Sublime Text. Default settings ignored it,
+so you just have to modify this, and add a shortcut key to use it. Official is shared in
+<a href="http://www.sublimetext.com/docs/2/vintage.html">vintage document</a> and a simple <a href="http://madscientist.wordpress.com/2012/10/18/make-sublime-text-2-as-vim-replacement/">tutorial</a></p>
+
+<h4>Remove Vintage from ignore_packages</h4>
+
+<ol>
+<li>Preferences -> Settings - Default</li>
+<li>Edit file, remove Vintage from ignored_packages
+<code>
+// List any packages to ignore here. When removing entries from this list,
+// a restart may be required if the package contains plugins.
+//"ignored_packages": ["Vintage"]
+"ignored_packages": []
+</code></li>
+<li>Preferences -> Settings - User, and do step 2</li>
+</ol>
+
+
+<h4>Setup shortcut key binding</h4>
+
+<ol>
+<li>Preferences -> Key Bindings - User ( I use User mode, since in Default mode, updating the software, will reset default settings)</li>
+<li>Edit file, add your preferred shortcut key
+```
+[
+ // Add key shortcut to VIM, using escape key in this example
+ { "keys": ["escape"], "command": "exit_insert_mode",
+
+<pre><code> "context":
+ [
+     { "key": "setting.command_mode", "operand": false },
+     { "key": "setting.is_widget", "operand": false }
+ ]
+</code></pre>
+
+<p> }
+]
+```</p></li>
+</ol>
+
+
+<p>Now everytime you press 'escape' key, it will switch to VIM edit mode!</p>
+
+<p>If you want VIM commands, you can install <strong>Vintage Ex</strong> through package control.</p>
+
+<h3>Setup SFTP</h3>
+
+<p>The official <a href="http://wbond.net/sublime_packages/sftp">website</a> will teach you to install, and configure parameters.
+I use this simple <a href="https://coderwall.com/p/52p2xa">tutorial</a> to <strong> setup remote server</strong> and <strong> sync remote to local </strong>.</p>
+
+<p>Note that, when creating a local repo., <strong>sftp-config.json</strong> will be created, and server settings are done in this file.
+I made a few tweaks to make it work better.
+<code>
+"save_before_upload": true,
+"upload_on_save": true # when save, file will be uploaded, ensure remote file be up to date
+"sync_down_on_open": false,
+"sync_skip_deletes": false,
+"confirm_downloads": false,
+"confirm_sync": false,
+"confirm_overwrite_newer": true, # warning if remote is being modified
+</code></p>
+
+<p>Very simple and works well. Only a pity that .git is not synced, so git tools cannot be used.</p>
+
+<h3>Setup Rails Related Files</h3>
+
+<p>Just install the package via package control, and add key binding, reference <strong> Default (OSX).sublime-keymap </strong>
+in <a href="https://github.com/luqman/SublimeText2RailsRelatedFiles">github source</a>.</p>
+
+<p>Default uses <strong> Cmd Shift o </strong>.</p>
+
+<h3>Setup Rails Migration List</h3>
+
+<p>Just install via package control. Default uses <strong> Cmd Shift m </strong>.</p>
+]]></content>
+  </entry>
+  
+</feed>
